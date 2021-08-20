@@ -14,3 +14,15 @@
     justify-items: end;
     align-items: end;
 }
+
+.green {
+    grid-column: span 2; /*high number will cause it to create extra grids even if we didn't tell it*/
+    grid-row: span 2;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-column: 2 / 4;
+    grid-column: 2 / -1; /* span it to the last track */
+    grid-row: 2 / -1; /*but you need to define rows in the container*/
+    justify-self: end;
+    align-self: end;
+}
