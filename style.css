@@ -1,0 +1,16 @@
+.container {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-columns: 300px 300px 1fr;
+    grid-template-columns: 300px 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr); /*how many times to repeat what*/
+    grid-template-columns: auto 1fr 1fr; /*auto = max size of content*/
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fill, 200px); /*don't care how many columns. Just figure it out for me. show how you can change sizing of page*/
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    justify-items: end;
+    align-items: end;
+}
